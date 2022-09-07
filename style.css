@@ -1,0 +1,10 @@
+@import url('/assets/style/font.css');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: 'Yekan';
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
