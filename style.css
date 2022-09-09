@@ -1,8 +1,122 @@
-@import url('/assets/style/font.css');
+@import url("/assets/style/font.css");
 
-*, *::before, *::after{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+:root {
+  --mainBlack: #222;
+  --mainWhite: #fff;
+  --bodyColor: #f6f6f6;
+  --mainColor: green;
+}
+html{
+  font-size: 62.5%;
+}
+body {
+  font-family: "Yekan";
+  background-color: var(--bodyColor);
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.title {
+  margin: 3rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--mainColor);
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+form .todo-input {
+  background-color: var(--mainWhite);
+  flex-grow: 1;
+  border: 1px solid var(--mainColor);
+  border-radius: 20px;
+  width: 40rem;
+}
+form .todo-submit,
+form .todo-input {
+  outline: 0;
+  padding: 1.5rem 2rem;
+}
+form .todo-submit {
+  cursor: pointer;
+  border: 0;
+  color: var(--mainColor);
+  transform: translateX(-55px);
+}
+.todo-submit i{
+  vertical-align: middle;
+}
+fieldset{
+  border: 1px solid var(--mainColor);
+  box-shadow: 0 5px 5px 2px rgba(0, 0, 0, 0.07);
+  border-radius: 15px;
+  width: 40rem;
+}
+fieldset legend {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+}
+.filter-todo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  
+}
+.filter-container select{
+  padding: 0.5rem 1rem;
+}
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+h3{
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.6rem;
+  line-height: 0.2rem;
+  width: 100%;
+}
+h3 span{
+  background-color: var(--bodyColor);
+  padding: 0 0.7rem;
+}
+.todos {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--mainWhite);
+  border: 1px solid var(--mainColor);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+}
+.todos li {
+  flex-grow: 1;
+}
+.todos span{
+  margin-left: 0.5rem;
+}
+.fa-square-check{
+  color: rgb(114, 175, 22);
+}
+.fa-pen-to-square{
+  color: rgb(2, 2, 187);
+}
+.fa-trash-alt{
+  color: rgb(238, 52, 52);
 }

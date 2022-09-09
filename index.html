@@ -16,40 +16,62 @@
   </head>
   <body>
     <head>
-      <h1>Todo List</h1>
+      <h1 class="title">Todo List</h1>
     </head>
     <section class="container">
-      <div class="form-container">
+      <form>
         <input
           type="text"
           class="todo-input"
           placeholder="Add a task"
           autofocus
         />
-        <button class="todo-submit">
-          <i class="fas fa-plus-circle"></i>
-        </button>
-      </div>
-      <div class="todo-container">
-        <h4>Filter by status</h4>
-        <select name="todo" id="todo-filter">
-          <option class="all">all</option>
-          <option class="completed">completed</option>
-          <option class="uncompleted">uncompleted</option>
-        </select>
-        <div class="all-tasks">
-          <h3>Tasks</h3>
-          <ul class="todos">
-            <li>task1</li>
-            <span>
-              <i class="fas fa-check-circle"></i>
-            </span>
-            <span>
-              <i class="fas fa-trash-alt"></i>
-            </span>
-          </ul>
+        <span class="todo-submit" type="submit">
+          <i class="fas fa-plus-circle fa-2x"></i>
+        </span>
+      </form>
+      <fieldset>
+        <legend>ToDo Tasks</legend>
+        <div class="filter-todo-container">
+          <div class="filter-container">
+            <select name="todo" id="todo-filter">
+              <option value="all">all</option>
+              <option value="completed">completed</option>
+              <option value="uncompleted">uncompleted</option>
+            </select>
+          </div>
+          <div class="todo-container">
+            <h3><span>All Tasks</span></h3>
+            <ul class="todos">
+              <li>task1</li>
+              <span>
+                <i class="fa-solid fa-square-check fa-lg"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-pen-to-square fa-lg"></i>
+              </span>
+              <span>
+                <i class="fas fa-trash-alt fa-lg"></i>
+              </span>
+            </ul>
+          </div>
+          <div class="todo-container">
+            <h3><span>Completed Tasks</span></h3>
+            <ul class="todos">
+              <li>task2</li>
+              <span>
+                <i class="fa-solid fa-square-check fa-lg"></i>
+              </span>
+              <span>
+                <i class="fa-solid fa-pen-to-square fa-lg"></i>
+              </span>
+              <span>
+                <i class="fas fa-trash-alt fa-lg"></i>
+              </span>
+            </ul>
+          </div>
         </div>
-      </div>
+      </fieldset>
     </section>
   </body>
 </html>
