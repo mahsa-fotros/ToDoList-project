@@ -37,7 +37,6 @@ form {
   margin-bottom: 4rem;
 }
 form .todo-input {
-  background-color: var(--mainWhite);
   flex-grow: 1;
   border: 1px solid var(--mainColor);
   border-radius: 20px;
@@ -47,14 +46,21 @@ form .todo-input {
 form .todo-submit,
 form .todo-input {
   outline: 0;
+  background-color: var(--mainWhite);
 }
 form .todo-submit {
   cursor: pointer;
   border: 0;
   color: var(--mainColor);
   transform: translateX(-45px);
-  background-color: var(--mainWhite);
+  padding: 0.2rem;
   margin: auto 0;
+  border-radius: 100%;
+  transition: all 0.3s ease-in-out;
+}
+form .todo-submit:hover{
+  background-color: green;
+  color: white;
 }
 .todo-submit i{
   vertical-align: middle;
