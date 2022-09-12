@@ -31,43 +31,23 @@
         </button>
       </form>
       <fieldset>
-        <legend>ToDo Tasks</legend>
+        <legend>All Tasks</legend>
         <div class="filter-todo-container">
           <div class="filter-container">
             <select name="todo" id="todo-filter">
               <option value="all">all</option>
-              <option value="completed">completed</option>
-              <option value="uncompleted">uncompleted</option>
+              <option value="uncompleted">To-Do</option>
+              <option value="completed">Done</option>
             </select>
           </div>
           <div class="todo-container">
-            <h3><span>All Tasks</span></h3>
-            <ul class="todos">
-              <li>task1</li>
-              <span>
-                <i class="fa-solid fa-square-check fa-lg"></i>
-              </span>
-              <span>
-                <i class="fa-solid fa-pen-to-square fa-lg"></i>
-              </span>
-              <span>
-                <i class="fas fa-trash-alt fa-lg"></i>
-              </span>
+            <h3><span>To-Do</span></h3>
+            <ul class="todo-list"> 
             </ul>
           </div>
-          <div class="todo-container">
-            <h3><span>Completed Tasks</span></h3>
-            <ul class="todos">
-              <li>task2</li>
-              <span>
-                <i class="fa-solid fa-square-check fa-lg"></i>
-              </span>
-              <span>
-                <i class="fa-solid fa-pen-to-square fa-lg"></i>
-              </span>
-              <span>
-                <i class="fas fa-trash-alt fa-lg"></i>
-              </span>
+          <div class="completed-todo-container">
+            <h3><span>Done</span></h3>
+            <ul class="completed-todo-list">
             </ul>
           </div>
         </div>
