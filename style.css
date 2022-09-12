@@ -43,6 +43,10 @@ form .todo-input {
   width: 40rem;
   padding: 1.2rem 2rem;
   font-family: 'Yekan';
+  font-size: 1.6rem;
+}
+.todo-input::placeholder{
+  font-size: 1.6rem;
 }
 form .todo-submit,
 form .todo-input {
@@ -93,11 +97,12 @@ fieldset legend {
   border: 1px solid var(--mainColor);
   border-radius: 12px;
   appearance: none;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
   width: 100%;
   text-align: center;
   font-family: 'Yekan';
   font-weight: bold;
+  font-size: 1.5rem;
 }
 .filter-container{
   width:14rem;
@@ -126,7 +131,7 @@ h3{
   border-bottom: 1px solid #ccc;
   text-align: center;
   margin: 3rem 0 2rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 0.2rem;
   width: 100%;
 }
@@ -146,6 +151,7 @@ h3 span{
 }
 .todo li {
   flex-grow: 1;
+  font-size: 1.5rem;
 }
 .todo span{
   margin-left: 0.5rem;
