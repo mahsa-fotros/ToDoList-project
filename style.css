@@ -105,6 +105,7 @@ fieldset legend {
   font-family: 'Yekan';
   font-weight: bold;
   font-size: 1.5rem;
+  background-color: var(--mainWhite);
 }
 .filter-container{
   width:14rem;
@@ -176,5 +177,8 @@ h3 span{
   form .todo-input, fieldset{
      width: 80vw;
      max-width: 40rem; 
+  }
+  .filter-container::after{
+    padding: 0.7rem;
   }
 }
